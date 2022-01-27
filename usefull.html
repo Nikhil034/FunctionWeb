@@ -1,0 +1,146 @@
+<style type="text/css">
+	.container
+	{
+	   width: 200px;
+	   height: 100px;
+	   background-color: #d97855;
+	   text-align: center;
+	   margin-left: 400px;
+	   margin-top: 200px;	
+	}
+	body
+	{
+		background-color: #e6e884;
+	}
+	.btn
+	{
+		background-color: #e64568;
+		color: white;
+	}
+	
+	
+
+</style>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to javascript practice</title>
+</head>
+<body>
+	<div class="container">
+		<label>Type Function Name</label>
+		<br><br>
+		<input type="text" name="tx1" id="funnam">
+		<br><br>
+		<button class="btn" id="pro">Process</button>
+	</div>	
+
+</body>
+<script type="text/javascript">
+	
+	document.getElementById('pro').addEventListener('click',function Process() {
+		const txtfun=document.getElementById('funnam').value;
+		if(txtfun=='lorem()')
+		{
+			const ansdv=document.createElement("div");
+			ansdv.setAttribute("id","divans");
+			ansdv.innerText="Your Answer Is:"
+			ansdv.setAttribute("style","width:400px;height:300px;background-color:#fae3b9;margin-left:650px;text-align:center");
+			const h4=document.createElement("h4");
+			h4.setAttribute("id","h4data");
+			h4.innerText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula erat in nibh tempor mollis. Donec eget ipsum tristique justo eleifend tristique. Aliquam scelerisque aliquam mi, vel laoreet eros mollis eget. Pellentesque placerat, orci sit amet consectetur egestas, purus sem dictum velit, eu maximus quam ante non libero. Cras a viverra nunc, ac faucibus lacus. Donec efficitur, libero vulputate accumsan dapibus, ex augue convallis nulla, a mattis sapien ipsum quis massa.";
+			ansdv.appendChild(h4);
+			const bd=document.body;
+			bd.appendChild(ansdv);
+		}
+		else if(txtfun=='insert()')
+		{
+			const ansdv=document.createElement("div");
+			ansdv.setAttribute("id","divans");
+			ansdv.innerText="Your Answer Is:"
+			ansdv.setAttribute("style","width:400px;height:300px;background-color:#fae3b9;margin-left:650px;text-align:center");
+			const h4=document.createElement("h4");
+			h4.setAttribute("id","h4data");
+			h4.innerText="INSERT INTO table_name (column1, column2, column3,columnN)VALUES (value1, value2, value3,valueN)";
+			ansdv.appendChild(h4);
+			const bd=document.body;
+			bd.appendChild(ansdv);
+		}
+		else if(txtfun=='join()')
+		{
+			const ansdv=document.createElement("div");
+			ansdv.setAttribute("id","divans");
+			ansdv.innerText="Your Answer Is:"
+			ansdv.setAttribute("style","width:400px;height:300px;background-color:#fae3b9;margin-left:650px;text-align:center");
+			const h4=document.createElement("h4");
+			h4.setAttribute("id","h4data");
+			h4.innerText="SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDateFROM Orders INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;\n\n\n SELECT column_name(s) FROM table1 LEFT JOIN table2 ON table1.column_name = table2.column_name;";
+			ansdv.appendChild(h4);
+			const bd=document.body;
+			bd.appendChild(ansdv);
+		}
+		else if(txtfun=='phpstringfun()')
+		{
+			const ansdv=document.createElement("div");
+			ansdv.setAttribute("id","divans");
+			ansdv.innerText="Your Answer Is:"
+			ansdv.setAttribute("style","width:400px;height:300px;background-color:#fae3b9;margin-left:650px;text-align:center");
+			const h4=document.createElement("h4");
+			h4.setAttribute("id","h4data");
+			h4.innerText="(1)echo md5($str);\n\n(2)echo sha1($str);\n\n(3)echo str_replace('world','Peter','Hello world!');\n\n(4)echo str_word_count('world Hello !'');\n\n(5)echo strtolower(' WORLD hello');\n\n(6)echo ucwords('world hello')\n\n(7)print_r(str_split('world'));";
+			ansdv.appendChild(h4);
+			const bd=document.body;
+			bd.appendChild(ansdv);
+		}
+		else if(txtfun=='mysqlprepared()')
+		{
+			const ansdv=document.createElement("div");
+			ansdv.setAttribute("id","divans");
+			ansdv.innerText="Your Answer Is:"
+			ansdv.setAttribute("style","width:400px;height:300px;background-color:#fae3b9;margin-left:650px;text-align:center");
+			const h4=document.createElement("h4");
+			h4.setAttribute("id","h4data");
+			h4.innerText="$stmt = $conn->prepare('INSERT INTO MyGuests (firstname, lastname, email) VALUES (?, ?, ?)'')\n\n$stmt->bind_param('sss', $firstname, $lastname, $email);\n\n$stmt->execute();\n\n\nThe argument may be one of four types:\n\n i - integer\n d - double\n s - string\n b - BLOB";
+			ansdv.appendChild(h4);
+			const bd=document.body;
+			bd.appendChild(ansdv);
+		}
+		else if(txtfun=='phpwithajax()')
+		{
+			const ansdv=document.createElement("div");
+			ansdv.setAttribute("id","divans");
+			ansdv.innerText="Your Answer Is:"
+			ansdv.setAttribute("style","width:400px;height:300px;background-color:#fae3b9;margin-left:650px;text-align:center");
+			const h4=document.createElement("h4");	
+			h4.innerText="Folllow this link:-https://www.w3schools.com/php/php_ajax_intro.asp";
+			ansdv.appendChild(h4);
+			const bd=document.body;
+			bd.appendChild(ansdv);
+		}
+		else if(txtfun=="phparray()")
+		{
+			const ansdv=document.createElement("div");
+			ansdv.setAttribute("id","divans");
+			ansdv.innerText="Your Answer Is:"
+			ansdv.setAttribute("style","width:400px;height:300px;background-color:#fae3b9;margin-left:650px;text-align:center");
+			const h4=document.createElement("h4");	
+			h4.innerText="$cars=array('Volvo','BMW','Toyota');\n\n(1)print_r(array_chunk($cars,2));\n\n(2)(array_key_exists('Volvo',$cars));\n\n(3)print_r(array_merge($a1,$a2));\n\n(4)print_r(array_slice($cars,2));\n\n(5)print_r(array_unique($cars)); ";
+			ansdv.appendChild(h4);
+			const bd=document.body;
+			bd.appendChild(ansdv);
+		}
+
+		else
+		{
+			alert("No Function Found");
+		}
+	});
+
+
+
+ 
+  
+</script>
+</html>
